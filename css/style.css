@@ -1,0 +1,99 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	background: #E0FFFF;
+	font-weight: 300;
+}
+
+h4 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+	margin: 0 auto;
+}
+
+hr {
+	border-color: black;
+	height: 2px;
+}
+.user {
+	display: flex;
+}
+.user__logo {
+	margin-top: 20px;
+}
+
+.user__name {
+	float: right;
+}
+.user__position {
+	float: right;
+}
+
+/* Google Nexus 5 phone, Ipad, laptop */
+@media screen and (max-width: 360px) {
+  .user__logo {
+    height: 48px;
+    margin-right: 0.5em;
+  }
+  .user__name {
+  	font-size: 2em;
+  }
+  .user__position {
+    font-size: 1.3em;
+  }
+  h2 {
+  	font-size: 20px;
+  }
+  h3 {
+  	font-size: 20px;
+  }
+} 
+
+@media screen and (min-width: 650px) {
+	.user__position {
+		font-size: 1.7em;
+	}
+	h2 {
+		font-size: 25px;
+	}
+	h3 {
+		font-size: 25px;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	.user__name {
+		font-size: 3em;
+	}
+	.user__position {
+		font-size: 1.8em;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	h3 {
+		font-size: 30px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.user__name {
+		font-size: 3.5em;
+	}
+	.user__position {
+		font-size: 2.25em;
+	}
+	h2 {
+		font-size: 40px;
+	}
+	h3 {
+		font-size: 40px;
+	}
+
+}

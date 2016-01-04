@@ -1,27 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Thomas Leung</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<title>Thomas Leung Portfolio</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+  			// Picture element HTML5 shiv
+  			document.createElement( "picture" );
+  		</script>
+		<script src="js/picturefill.js" async></script>
+
+
 	</head>
+
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
 		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Thomas Leung!</h1>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
+			<div class="row user">
+				<div class="col-md-6">
+					<img class="user__logo img-responsive" src="images/logo.svg" alt="logo">
+				</div>
+				<div class="col-md-6 text-right text-uppercase">
+					<h1 class="user__name">Thomas Leung</h1>
+					<h4 class="user__position">Front-end Developer</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<hr>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<picture>
+						<source media="(min-width: 750px)" srcset="images/main-2280_large_2x.jpg 2x, images/main-1140_large_1x.jpg" />
+						<source media="(min-width: 500px)" srcset="images/main_medium.jpg" />
+						<img class="img-responsive" src="images/main_small.jpg" alt="Main portfolio image">
+					</picture>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Featured Work</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<picture>
+						<source media="(min-width: 750px)" srcset="images/keyboard-555_high.jpg" />
+						<source media="(min-width: 500px)" srcset="images/keyboard-555_med.jpg" />
+						<img class="img-responsive" src="images/keyboard-555_low.jpg" alt="Interactive Resume" data-toggle="modal" data-target="#project1">
+					</picture>
+					<h3 class="text-uppercase">Interactive Resume</h3>
+					<p><a href="#">link</a></p>
+				</div>
+				<div class="col-md-4 text-center">
+					<picture>
+						<source media="(min-width: 750px)" srcset="images/pacman-555_high.jpg" />
+						<source media="(min-width: 500px)" srcset="images/pacman-555_med.jpg" />
+						<img class="img-responsive" src="images/pacman-555_low.jpg" alt="Arcade Game" data-toggle="modal" data-target="#project2">
+					</picture>
+					<h3 class="text-uppercase">Arcade Game</h3>
+					<p><a href="#">link</a></p>
+				</div>				
+				<div class="col-md-4 text-center">
+					<picture>
+						<source media="(min-width: 750px)" srcset="images/map-555_high.jpg" />
+						<source media="(min-width: 500px)" srcset="images/map-555_med.jpg" />
+						<img class="img-responsive" src="images/map-555_low.jpg" alt="Neigborhood Map" data-toggle="modal" data-target="#project3">
+					</picture>
+					<h3 class="text-uppercase">Neighborhood Map</h3>
+					<p><a href="#">link</a></p>
+				</div>
+			</div>
+
+		</div>
+
+
 		<footer>
-    		<ul>
-        		<li><a href="mailto:thomassleung@gmail.com">email</a></li>
-        		<li><a href="https://github.com/thleung">github.com/thleung</a></li>
-			</ul>
-		</footer>
+			<div class="container text-center">
+				<div class="row">
+					<div class ="col-md-12">
+						<hr>
+					</div>
+				</div>
+    			<div class="social">
+      				<a href="https://www.facebook.com/thomas.leung.127" class="zocial-facebook">Facebook</a>
+      			</div>
+      			<a href="//github.com/udacity/responsive-images/tree/master/project/final" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+      		</div>
+      	</footer>
+
+		<!-- Modal -->
+		<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1Label" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title text-center text-uppercase" id="project1Label">Interactive Resume</h4>
+		      </div>
+		      <div class="modal-body">
+		      	<img class="img-responsive" src="images/keyboard-555_med.jpg" alt="Interactive Resume">
+						<p>This is a project for interactive resume</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="project2Label" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title text-center text-uppercase" id="project2Label">Arcade Game</h4>
+		      </div>
+		      <div class="modal-body">
+		      	<img class="img-responsive" src="images/pacman-555_med.jpg" alt="Arcade Game">
+						<p>This is a project for arcade game</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="project3Label" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title text-center text-uppercase" id="project3Label">Neighborhood Map</h4>
+		      </div>
+		      <div class="modal-body">
+		      	<img class="img-responsive" src="images/map-555_med.jpg" alt="Neighborhood Map">
+						<p>This is a project for map of the neighborhood</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 	</body>
 </html>
