@@ -1,0 +1,88 @@
+html, 
+body, 
+#map_canvas {
+  height: 100%; 
+  width: 100%; 
+  margin: 0; 
+  padding: 0; 
+  z-index: 0;
+}
+
+.scrollFix {
+    line-height: 1.35;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*styles for setting the container div to the same as the map canvas height and width*/
+.container-fluid {
+  height:100%;
+  width: 100%;
+}
+
+/*using fixed positioning so that I can use the z axis..though other positioning settings also work*/
+.form {
+  position: fixed;
+  z-index: 5;
+}
+
+/* Turns the search bar color to white so search bar is visible on map */
+#theFieldID {
+  background-color: #fff;
+}
+
+/*styles for making sure map has functioning z index as well as no white space from the container div*/
+#map_canvas img{
+  max-width: none;
+  position: relative;
+  z-index: 2;
+  height: 100%; 
+  margin: 0; 
+  padding: 0;
+}
+
+/* Search bar positioning and styling */
+.search {
+  position: relative;
+  /*margin: 2em 10px 0 5em;*/
+  margin: 0 0 0 0;
+  z-index: 5;
+  max-width: 150px;
+}
+
+/*styles for div containing the main button*/
+.mainbutton {
+  list-style-type: none;
+  /*margin: 3em;*/
+  border: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
+}
+
+/*styles for div containing the list for location button */
+.location-button-def {
+  list-style-type: none;
+  min-width: 15%;
+  max-width:25%;
+  background-color: #fff;
+  border-top: solid;
+  border-bottom: solid;
+  border-left: solid;
+  border-width: 1px;
+  border-color: #337ab7;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  z-index: 10;
+  margin: 50px 0 0 0;
+  max-height: 300px;
+  overflow: auto;
+}
+
+/* highlight the hypertext links as blue color */
+a {
+  color: blue;
+  text-decoration: none;
+}
